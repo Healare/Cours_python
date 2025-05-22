@@ -1,8 +1,8 @@
 from bs4 import BeautifulSoup
 
 # Extraction des informations souhaitées avec Beautiful Soup
-with open("index.html", "r") as file:
-    soup = BeautifulSoup(file, "html.parser")
+with open(r"D:\Pycharm\PycharmProjects\Cours_python\P3\P3C2\énoncé\index.html", "r") as file:
+    soup = BeautifulSoup(file.read(), 'html.parser')
 
 # Extraction du titre de la page
 title = soup.title.string
